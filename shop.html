@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> The tracks | Order </title>
+
+	<link rel = "icon" href ="images/logo.png" type = "image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+
+</head>
+	<style>
+	
+	div.nav.clicked a {
+		display: block;
+		float: none;
+	}
+	</style>
+
+	<body>
+	
+
+<div class="inform">
+	<div class="row">
+		<div class="col-4">
+			<h3> Opening time: 24 hrs </h3>
+		</div>
+
+		<div class="col-4">
+			<h3> Email:  O-tunes@gmail.com</h3>
+		</div>
+
+		<div class="col-4">
+			<h3>  Telephone : 391-5595 </h3>
+		</div>
+	</div>
+</div>
+
+	<div class="nav" id="bar">
+		<a href="index.html"><i class="fa fa-home"> </i>&nbsp Home </a>
+		<a href="pre.html" class="active"><i class="fa fa-shopping-bag"> </i>&nbsp  Buy </a>
+		<a href="about.html"><i class="fa fa-user"></i>&nbsp About Us </A>
+		<a href="contact.html"><i class="fa fa-envelope"> </i>&nbsp  Contact </a>
+		<a href="javascript:void(0)" class="icon" onclick="Click()"><i class="fa fa-bars"></a></i>
+
+	</div>
+
+	<div class="imgcont">
+			<h1 class="text"> We makes the tunes as you need </h1><br>
+
+		<div class="finders">
+			<input type="search" placeholder=" What are you looking for? " name="search">
+			<button class="find"> Find </button>
+		</div>
+
+	</div><br>
+	<h1 class="buy"> Order the tracks </h1><br><br>
+
+	<div class="row">
+	
+		<div class="form col-6">
+
+			<input type="text" placeholder= "What's your name ?">
+
+			<input type="email" placeholder="What's your email ? ">
+	
+			<input type="tune" placeholder="which tune do you want to unlock ?"><br><br>
+
+			<button onclick="myFunction(this)" id="lock" class="fa fa-lock"> Ulock </button>
+			&nbsp &nbsp
+			
+			<button id="lock" class="fa fa-arrow-right"> Continue  </button> <br>
+			
+
+		</div>
+
+		<div class="payment-method col-6">
+
+		<p class="payemnt">  We allow hand cash for payment . We willl deliver the tune which you have orderd
+				      It takes additional pay for delivery </p>
+		<img src="images/pay.jpg" width="100%">
+		</div>
+	</div>
+	<div class="footer">
+		
+		<div class="row">
+			<p class="col-12"> &copy; Copy right all right reserved The tunes 2021<p>
+		</div>	
+	</div>
+	
+	<script>
+
+			function Click(){
+			let nav = document.getElementById("bar");
+				if(nav.className === "nav"){
+				nav.className += " clicked";
+				}	
+				else{
+					nav.className = "nav";	
+				}
+			}
+
+			function myFunction(c) {
+  				c.classList.toggle("fa-unlock-alt");
+		}
+
+	</script>
+
+	</body>
+</html>

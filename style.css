@@ -1,0 +1,310 @@
+.imgcont{
+	background-image: url("images/back.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20%;
+}
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+.row{
+	text-align: center;
+}
+::selection{
+	background-color: black;
+	color: white;
+}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+[class*="col-"]{
+
+	float: left;
+	padding: 20px;
+}
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+.m1{
+	text-align: center;
+}
+.card {
+	box-shadow: 1px 2px 8px 0 rgb(0 0 0 / 20%);
+ 	padding: 20px;
+  	text-align: center;
+	border-radius: 20px;
+  	background-color: transparent;
+}
+button{
+	border: none;
+	outline: none;
+	padding: 10px 40px;
+	background:rgb(102, 204, 0);
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+h1.text{
+	color: white;
+	font-size: 4em;
+	text-align: center;
+}
+.imgcont input{
+	width: 100%;
+	padding: 14px;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+input[type="search"]{
+
+	border-left: 2px solid pink;
+	font-size: 18px;
+	font-weight: bold;
+	border-top-left-radius: 50px;
+  	border-bottom-left-radius:50px;
+		
+}
+input[type="search"]:focus{
+	border-right: none;
+}
+::placeholder{
+	font-size: 16px;
+}
+.finders{
+	display: flex;
+	text-align: center;
+}
+button.find{
+	border-radius: 0px;
+	padding: 12px 24px;
+	background:  #00A145;
+}
+h3{
+	color:white;
+	
+}
+.inform{
+	background-color: #1D1F20;
+}
+.nav{
+	background-color: #393D3F;
+	padding: 20px;/*maker bigger*/
+	position: sticky;
+	top: 0; /* Make the navigation in top */
+	z-index: 9; /* Any elenent will not be able overlap the vavigation*/ 
+	box-shadow: 0px 12px 8px 0 rgb(0 0 0 / 20%);
+}
+.nav a{
+	text-decoration: none;
+	color: white;
+	padding: 40px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.nav a:hover{
+	color: #3083DC;
+	transition: .3s;
+}
+.icon{
+	float: right;
+	display: none;
+}
+p.col-12{
+	background: #393D3F;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+audio::-webkit-media-controls-enclosure{
+   	 background:none;
+}
+
+h1.buy{
+	border-left: 8px solid green;
+}
+.img-contain{
+	position: relative;
+}
+image{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	transition: .3s;
+}
+button.inside {
+    	position: absolute;
+    	top: 40%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: .3s;
+}
+.img-contain:hover .image{
+
+	opacity: 0.6;
+	transition: .3s;
+}
+.img-contain:hover button.inside{
+	opacity: 1;
+	transition: .3s;
+}
+a.active{
+	color: #3083DC;
+}
+i.fa.fa-star, i.fa.fa-star-half-o, i.fa.fa-star-o{
+    color: orange;
+}
+
+.container input{
+	width: 60%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-left: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+.container{
+	display: flex;
+	margin-bottom: 30px;
+}
+.in{
+	background: rgb(102, 204, 0);
+	color: white;
+	padding: 12px;
+	text-align: center;
+	min-width: 50px;
+}
+.container input:focus{
+	border: 2px solid rgb(102, 204, 0);
+}
+textarea{
+	outline: none;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 5px;	
+}
+textarea:hover{
+	border: 1px solid rgb(102, 204, 0);
+}
+textarea:focus{
+	border: 2px solid rgb(102, 204, 0);
+}
+button.send{
+	float: left;
+	background: rgb(102, 204, 0);
+}
+button a{
+	text-decoration: none;
+	color: white;
+}
+.form input{
+	width: 80%;
+	padding: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	margin: 15px;
+	box-sizing: border-box;
+}
+button#lock {
+    	font-size: 25px;
+	width: 40%;
+}
+button#con{
+    	font-size: 25px;
+	width: 40%;
+}
+
+label{
+	font-size: 20px;
+	font-weight: bold;
+}
+p.payemnt {
+    	font-size: 25px;
+    	font-weight: bold;
+    	text-align: justify;
+}
+p{
+	font-weight: bold;
+}
+
+p.about {
+    text-align: justify;
+    font-size: 25px;
+}
+button.learn{
+	text-align: center;
+	border-radius: 0px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+	[class*="col-"]{
+		width: 100%;
+	}
+	h1.text{
+		font-size: 30px;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	.form input{
+		max-width:100%;
+	}
+	.nav{
+		padding: 20px;
+	}
+	.nav a{
+		padding: 20px;
+	}
+	.nav a:not(:first-child){display: none;}
+
+
+	div.nav a.icon{	
+		float: none;
+		position: absolute;
+		top:0;
+		right:0;
+		display: block;
+	}
+
+	div.nav.clicked a {
+		display: block;
+		float: none;
+	}
+	audio{
+		width: 80%;
+	}
+	button#con{
+		width: 100%;
+	}
+	button#lock{
+		width: 100%;
+	}
+
+}
